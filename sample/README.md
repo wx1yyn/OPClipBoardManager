@@ -19,12 +19,13 @@ system.transfer.list
 ```
 
 
-使用[sdat2img.py](https://github.com/xpirt/sdat2img)把解压后的文件生成一个ext4文件系统的文件。
+使用[sdat2img.py](https://github.com/xpirt/sdat2img)把解压后的文件生成一个ext4文件系统的文件，挂载到一个临时目录上，把应用复制到工作目录进行分析。
 
 ```
 sdat2img.py system.transfer.list system.new.dat system.img
 mkdir tmp
 sudo mount -t ext4 system.img tmp/
+cd tmp/
 ```
 
 剪切板应用位于`./app/OPClipBoardManager/OPClipBoardManager.apk`。

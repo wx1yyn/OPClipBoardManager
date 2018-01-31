@@ -1,5 +1,8 @@
 # 一加剪切板应用分析
 
+此应用的样本可以在[这里](https://github.com/explorerlxz/OPClipBoardManager/tree/master/sample)找到，文件名为此应用的sha256sum。
+
+
 ## assets目录结构
 
 ```
@@ -106,7 +109,7 @@ resources.arsc:      data
 
 ### obscure_word_explanation.dic与parser.dic分析
 
-看了下代码，这两个文件貌似都需要看懂lib/armeabi/libtriedic.so中的一些函数才可以理解，等以后有能力再分析。
+看了下代码，这两个文件貌似都需要看懂`./lib/armeabi/libtriedic.so`中的一些函数才可以理解，等以后有能力再分析。
 
 ### parse.zip和pattern.zip分析
 
